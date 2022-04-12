@@ -13,18 +13,19 @@ import {
   FaInstagram,
   FaBehance,
   FaSun,
-  FaMoon
+  FaMoon,
+  FaBlog
 } from 'react-icons/fa';
 import { DiJavascript } from "react-icons/di";
 import { IoMdMail, IoLogoCss3 } from 'react-icons/io';
 import { BsChatFill, BsLaptopFill } from "react-icons/bs";
 import Link from 'next/Link';
-import Image from 'next/image'
+import Image from 'next/image';
 import ProfilePic from '@images/profile_image.jpg';
 import AboutPic from '@images/person-about.png';
 import NotFoundPic from '@images/image-not-found.jpg';
 import styles1 from '@styles/portfolio.module.scss';
-import styles2 from '@styles/portfolioClare.module.scss'
+import styles2 from '@styles/portfolioClare.module.scss';
 
 function PortfolioHome() {
   const [styles, setStyles] = React.useState(styles1);
@@ -205,7 +206,7 @@ function PortfolioHome() {
           {/* <p>Bienvenid@ a mi portafolio</p> */}
           <h1>{'{ Marco Agüero }'}</h1>
           <p>
-            Hola, Bienvenid@ a mi portafolio. Soy desarrollador web independiente especializado en Frontend con sede en Costa Rica. Mis tecnologías favoritas son Reactjs y Nextjs
+            Hola, bienvenid@ a mi portafolio. Soy desarrollador web independiente especializado en Frontend con sede en Costa Rica. Mis tecnologías favoritas son React.js y Next.js
           </p>
           <div className={styles.socialLinks}>
             <Link href='https://www.linkedin.com/in/marcoa16b/'>
@@ -240,6 +241,20 @@ function PortfolioHome() {
                 Gmail
               </a>
             </Link>
+          </div>
+          <div>
+            
+            <div className={styles.socialLinks}>
+            <p>Visita mi Blog:</p>
+              <Link href='/blog'>
+                <a>
+                  <span>
+                    <FaBlog />
+                  </span> 
+                  Mi blog
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

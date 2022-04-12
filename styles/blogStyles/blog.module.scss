@@ -1,0 +1,219 @@
+@import 'variables';
+
+// ============================================================
+// ===================== GENERAL CLASSES ======================
+// ============================================================
+
+.BlogsMain {
+  // background-color: $Dark-Background;
+  padding: 60px 0 10px;
+  // color: $Dark-Text;
+}
+
+.BlogButton {
+  width: 100px;
+  // border: 1px solid s$Dark-blueClare;
+  padding: 10px;
+  border-radius: 15px;
+  transition: .5s;
+  text-align: center;
+  font-weight: bold;
+}
+.BlogButton a {
+  // color: $Dark-Text;
+  text-decoration: none;
+  transition: .5s;
+}
+.BlogButton:hover {
+  // background: $Dark-blueClare;
+}
+.BlogButton:hover a {
+  // color: $Dark-Background;
+}
+.MiniDivider {
+  width: 60%;
+  height: 6px;
+  // background-color: $Dark-blueClare;
+}
+.Divider {
+  width: 80%;
+  height: 6px;
+  margin: 20px 0;
+  // background-color: $Dark-blueClare;
+}
+
+// ============================================================
+// ====================== NEWS CLASSES ========================
+// ============================================================
+
+.BlogsNewsContainer {
+  // background-color: $Dark-Complement;
+  border-radius: 15px;
+  padding: 10px 50px 40px;
+  margin: 40px;
+}
+.BlogsMainNew {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+}
+.BlogNewsImg {
+  grid-column: 1;
+}
+.BlogNewsImg img {
+  border-radius: 15px;
+}
+.BlogNewsInfo {
+  grid-column: 2;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.BlogNewsInfo_Texts {
+  font-size: 18px;
+}
+
+// ============================================================
+// ====================== POSTS CLASSES =======================
+// ============================================================
+
+.BlogPostsContainer {
+  padding: 0 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BlogPostsContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BlogPostsContainer h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 0 0;
+}
+.GridPostsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+// ========================= POSTS ==========================
+
+.PostContainer {
+  display: inline-block;
+  max-width: 290px;
+  padding: 7px;
+  margin: 25px 5px;
+  // background-color: $Dark-Complement;
+  border-radius: 15px;
+}
+.PostContainer p {
+  margin-bottom: 35px;
+}
+.PostContainer img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer {
+  padding-left: 20px;
+}
+
+
+// ============================================================
+// ======================== CLARE MODE ========================
+// ============================================================
+.Dark {
+  background: $Dark-Background;
+  color: $Dark-Text;
+  a {
+    color: $Dark-Text;
+  }
+  .Navbar {
+    background-color: $Dark-Complement;
+    border-bottom: 1px solid $Dark-blueClare;
+  }
+  .BlogsNewsContainer {
+    background: $Dark-Complement;
+  }
+  .BlogButton {
+    border: 1px solid $Dark-blueClare;
+  }
+  .BlogButton:hover {
+    background: $Dark-blueClare;
+  }
+  .MiniDivider {
+    background-color: $Dark-blueClare;
+  }
+  .Divider {
+    background-color: $Dark-blueClare;
+  }
+  .PostContainer {
+    background-color: $Dark-Complement;
+  }
+}
+
+.Clare {
+  background: $Clare-Background;
+  color: $Clare-Text;
+  a {
+    color: $Clare-Text;
+  }
+  .Navbar {
+    background-color: $Clare-Complement;
+    border-bottom: 1px solid $Clare-blueClare;
+  }
+  .BlogsNewsContainer {
+    background: $Clare-Complement;
+  }
+  .BlogButton {
+    border: 1px solid $Clare-blueClare;
+  }
+  .BlogButton:hover {
+    background: $Clare-blueClare;
+  }
+  .MiniDivider {
+    background-color: $Clare-blueClare;
+  }
+  .Divider {
+    background-color: $Clare-blueClare;
+  }
+  .PostContainer {
+    background-color: $Clare-Complement;
+  }
+  .Navbar {
+    background: $Clare-blueClare;
+  }
+}
+
+// ============================================================
+// ====================== MEDIA QUERIES =======================
+// ============================================================
+
+@media (max-width: 885px) {
+  .BlogsNewsContainer {
+    padding: 10px;
+  }
+  .BlogsMainNew {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .MiniDivider {
+    margin: auto;
+  }
+  .BlogsMainNew .BlogButton {
+    margin: 20px;
+  }
+  .BlogNewsInfo {
+    padding: 0;
+  }
+  .BlogPostsContainer {
+    width: 70%;
+  }
+}

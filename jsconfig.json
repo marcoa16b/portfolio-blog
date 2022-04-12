@@ -10,6 +10,9 @@
       ],
       "@styles/*": [
         "styles/*"
+      ],
+      "@myProvider/*": [
+        "myProvider/*"
       ]
     }
   }

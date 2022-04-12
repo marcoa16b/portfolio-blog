@@ -1,0 +1,140 @@
+@import 'variables';
+
+$Nav-Background: #252627;
+$Nav-Text: #fff;
+$Nav-blueClare: #08fed8;
+$Nav-Complement: #1e1e1e;
+
+// ============================================================
+// ===================== GENERAL CLASSES ======================
+// ============================================================
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  color: $Nav-Text;
+  background-color: $Nav-Complement;
+  border-bottom: 1px solid $Nav-blueClare;
+  border-radius: 0 0 10px 10px;
+  transition: .5s;
+  z-index: 100;
+}
+.NavSocialContainer {
+  margin-left: 20px;
+  display: flex;
+}
+.IconSocial {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 0 10px;
+  background: $Nav-Background;
+  border: 1px solid $Nav-blueClare;
+  border-radius: 50%;
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  box-shadow: 0 0 5px $Nav-blueClare;
+}
+.IconSocial:hover {
+  color: $Nav-Background;
+  background: $Nav-blueClare;
+  box-shadow: 0 0 10px $Nav-blueClare;
+}
+.MyLogo {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.MyLogo a {
+  color: $Nav-Text;
+  text-decoration: none;
+}
+.MyLogo a span {
+  margin: 0 10px;
+}
+.NavLinksContainer {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.NavLinksContainer .NavLink {
+  width: 80px;
+}
+.NavLink a {
+  text-decoration: none;
+  color: $Nav-Text;
+  font-size: 18px;
+}
+.NavLink:hover a {
+  color: $Nav-blueClare;
+  text-decoration: underline;
+}
+
+
+
+.NavLinksMobile{
+  margin-right: 20px;
+}
+.IconNav {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  transition: .5s;
+}
+.IconNav:hover {
+  color: $Nav-blueClare;
+}
+.NavMobileContainer {
+  position: fixed;
+  top: 71px;
+  right: 0px;
+  transform: translateX(350px);
+  width: 75vw;
+  height: 40vh;
+  background: $Nav-Complement;
+  //border: 1px solid $Nav-blueClare;
+  border-bottom-left-radius: 10px;
+  box-shadow: -1px 1px 4px $Nav-blueClare;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: .5s;
+}
+.NavMobileActive {
+  transform: translateX(0px);
+}
+
+@media (max-width: 720px) {
+  .NavSocialContainer {
+    position: fixed;
+    flex-direction: column;
+    bottom: 10px;
+    right: 10px;
+  }
+  .NavSocialContainer .IconSocial {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .NavSocialContainer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  .NavSocialContainer .IconSocial {
+    margin: 5px 0;
+  }
+}
