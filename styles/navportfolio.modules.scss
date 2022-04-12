@@ -1,0 +1,82 @@
+/* ============================================================ */
+/* ===================== PORTFOLIO NAVBAR ===================== */
+/* ============================================================ */
+
+.NavbarPortfolio {
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 70px;
+  bottom: 20px;
+  padding: 0 10px;
+  left: calc(50% - 160px);
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(173, 14, 201);
+  border-radius: 15px;
+}
+.NavbarPortfolio .List {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+.IconNav {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  font-size: 30px;
+  transition: 0.5s;
+  color: #030127;
+}
+.NavbarPortfolio .List.Active .IconNav {
+  transform: translateY(-30px);
+}
+.TextNav {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  color: #030127;
+}
+.NavbarPortfolio .List.Active .TextNav {
+  opacity: 1;
+  transform: translateY(15px);
+}
+.Indicator {
+  position: absolute;
+  top: -50%;
+  width: 58px;
+  height: 58px;
+  background-color: #00fbff;
+  border-radius: 50%;
+  border: 6px solid #030127;
+}
+.Indicator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22.5px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 #030127;
+}
+.Indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -22.5px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 #030127;
+}
