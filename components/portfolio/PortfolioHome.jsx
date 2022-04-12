@@ -11,7 +11,9 @@ import {
   FaPython,
   FaJava,
   FaInstagram,
-  FaBehance
+  FaBehance,
+  FaSun,
+  FaMoon
 } from 'react-icons/fa';
 import { DiJavascript } from "react-icons/di";
 import { IoMdMail, IoLogoCss3 } from 'react-icons/io';
@@ -21,14 +23,27 @@ import Image from 'next/image'
 import ProfilePic from '@images/profile_image.jpg';
 import AboutPic from '@images/person-about.png';
 import NotFoundPic from '@images/image-not-found.jpg';
-import styles from '@styles/portfolio.module.scss';
+import styles1 from '@styles/portfolio.module.scss';
+import styles2 from '@styles/portfolioClare.module.scss'
 
 function PortfolioHome() {
+  const [styles, setStyles] = React.useState(styles1);
+  const [theme, setTheme] = React.useState('Dark');
   const [classHome, setClassHome] = React.useState(`${styles.List} ${styles.Active}`);
   const [classAbout, setClassAbout] = React.useState(`${styles.List}`);
   const [classWorks, setClassWorks] = React.useState(`${styles.List}`);
   const [classContact, setClassContact] = React.useState(`${styles.List}`);
 
+  function changeTheme(){
+    if(theme === 'Dark'){
+      setStyles(styles2)
+      setTheme('light')
+    }
+    else if(theme === 'light'){
+      setStyles(styles1)
+      setTheme('Dark')
+    }
+  }
 
   function classModify(props){
     if(props.id == 'Home'){
@@ -117,6 +132,16 @@ function PortfolioHome() {
   return (
     <div className={styles.portfolioPage} id='home'>
 
+      {/* FaSun, FaMoon */}
+      <div className={styles.ChangeThemeButton} onClick={changeTheme}>
+        {theme === 'Dark' 
+          ? 
+            <FaSun className={styles.ChangeThemeButton_icon} /> 
+          : 
+            <FaMoon className={styles.ChangeThemeButton_icon} />
+        }
+      </div>
+
       {/* <!-- ########## NAVBAR SECTION ########## --> */}
       <div className={styles.NavbarPortfolio}>
         <Link href='#home'>
@@ -178,9 +203,9 @@ function PortfolioHome() {
         </div>
         <div className={styles.portfolioHeader_Div}>
           {/* <p>Bienvenid@ a mi portafolio</p> */}
-          <h1>{'{ Marco Aguero }'}</h1>
+          <h1>{'{ Marco Agüero }'}</h1>
           <p>
-            Hey, que tal? Soy un desarrollador frontend, apacionado por la tecnologia y el aprendizaje.
+            Hola, Bienvenid@ a mi portafolio. Soy desarrollador web independiente especializado en Frontend con sede en Costa Rica. Mis tecnologías favoritas son Reactjs y Nextjs
           </p>
           <div className={styles.socialLinks}>
             <Link href='https://www.linkedin.com/in/marcoa16b/'>

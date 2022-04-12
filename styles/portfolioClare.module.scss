@@ -10,14 +10,14 @@
   right: 20px;
   width: 50px;
   height: 50px;
-  border: 1px solid $Dark-blueClare;
+  border: 1px solid $Clare-blueClare;
   border-radius: 15px;
-  box-shadow: 0px 0px 7px $Dark-blueClare;
+  box-shadow: 0px 0px 7px $Clare-blueClare;
   transition: .5s;
 }
 .ChangeThemeButton:hover {
-  box-shadow: 0px 0px 10px $Dark-Text;
-  color: $Dark-blueClare;
+  box-shadow: 0px 0px 10px $Clare-blueClare;
+  color: $Clare-blueClare;
 }
 
 /* ============================================================ */
@@ -34,7 +34,7 @@
   left: calc(50% - 170px);
   justify-content: space-around;
   align-items: center;
-  background-color: $Dark-blueClare;
+  background-color: $Clare-blueClare;
   border-radius: 15px;
   z-index: 100;
   // box-shadow: 2px 2px 4px #00fbff;
@@ -58,7 +58,7 @@
   text-align: center;
   font-size: 30px;
   transition: 0.5s;
-  color: $Dark-Background;
+  color: $Clare-Background;
 }
 .NavbarPortfolio .List.Active .IconNav {
   transform: translateY(-30px);
@@ -70,7 +70,7 @@
   letter-spacing: 0.05em;
   transition: 0.5s;
   opacity: 0;
-  color: $Dark-Background;
+  color: $Clare-Background;
 }
 .NavbarPortfolio .List.Active .TextNav {
   opacity: 1;
@@ -82,10 +82,10 @@
   left: 30px;
   width: 58px;
   height: 58px;
-  background-color: $Dark-Text;
+  background-color: $Clare-Text;
   border-radius: 50%;
   transition: .5s;
-  border: 6px solid $Dark-Background;
+  border: 6px solid $Clare-Background;
 }
 .Indicator::before {
   content: '';
@@ -96,7 +96,7 @@
   height: 20px;
   background: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 0px -10px 0 0 $Dark-Background;
+  box-shadow: 0px -10px 0 0 $Clare-Background;
 }
 .Indicator::after {
   content: '';
@@ -107,7 +107,7 @@
   height: 20px;
   background: transparent;
   border-top-left-radius: 20px;
-  box-shadow: 0px -10px 0 0 $Dark-Background;
+  box-shadow: 0px -10px 0 0 $Clare-Background;
 }
 .NavbarPortfolio .List:nth-child(1).Active ~ .Indicator {
   transform: translateX(calc(70px * 0));
@@ -128,8 +128,8 @@
 .portfolioPage{
   // height: 100vh;
   padding-top: 45px;
-  background-color: $Dark-Background;
-  color: $Dark-Text;
+  background-color: $Clare-Background;
+  color: $Clare-Text;
   z-index: 1;
 }
 .portfolioHeader {
@@ -158,7 +158,7 @@
   
 }
 .portfolioHeader_Div h1 {
-  color: $Dark-Text;
+  color: $Clare-Text;
   font-size: 40px;
   margin-top: 0;
 }
@@ -177,19 +177,19 @@
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  color: $Dark-Text;
+  color: $Clare-Text;
   font-weight: bold;
   margin: 10px 10px;
   padding: 10px;
   width: 100px;
-  border: 1px solid $Dark-blueClare;
+  border: 1px solid $Clare-blueClare;
   border-radius: 15px;
   transition: .5s;
 }
 .socialLinks a:hover {
-  color: $Dark-Background;
-  border: 1px solid $Dark-blueClare;
-  background: $Dark-blueClare;
+  color: $Clare-Background;
+  border: 1px solid $Clare-blueClare;
+  background: $Clare-blueClare;
   transition: .5s;
 }
 .socialLinks a span {
@@ -246,7 +246,7 @@
   height: 70px;
   padding: 5px;
   margin: 10px;
-  border: 1px solid $Dark-blueClare;
+  border: 1px solid $Clare-blueClare;
   border-radius: 15px;
   font-size: 50px;
   transition: .5s;
@@ -309,7 +309,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $Dark-Complement;
+  background-color: $Clare-Complement;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -318,7 +318,7 @@
   position: absolute;
   width: 150px;
   height: 140%;
-  background: $Dark-blueClare;
+  background: $Clare-blueClare;
   animation: animateCard 4s linear infinite;
   filter: blur(50px);
 }
@@ -326,7 +326,7 @@
   content: '';
   position: absolute;
   inset: 4px;
-  background: $Dark-Background;
+  background: $Clare-Background;
   border-radius: 16px;
 }
 @keyframes animateCard 
@@ -357,13 +357,13 @@
   font-size: 16px;
 }
 .WorkCard_Content a {
-  color: $Dark-Text;
+  color: $Clare-Text;
   font-size: 20px;
   padding: 10px;
   width: 70%;
   align-self: center;
   margin-top: 20px;
-  border: 1px solid $Dark-blueClare;
+  border: 1px solid $Clare-blueClare;
   border-radius: 10px;
   transition: .5s;
   position: absolute;
@@ -371,8 +371,8 @@
   text-decoration: none;
 }
 .WorkCard_Content a:hover {
-  color: $Dark-Background;
-  background: $Dark-blueClare;
+  color: $Clare-Background;
+  background: $Clare-blueClare;
 }
 
 // ============================================================
@@ -402,19 +402,19 @@
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  color: $Dark-Text;
+  color: $Clare-Text;
   font-weight: bold;
   margin: 10px 10px;
   padding: 10px;
   width: 100px;
-  border: 1px solid $Dark-blueClare;
+  border: 1px solid $Clare-blueClare;
   border-radius: 15px;
   transition: .5s;
 }
 .ContactLinks a:hover {
-  color: $Dark-Background;
-  border: 1px solid $Dark-blueClare;
-  background: $Dark-blueClare;
+  color: $Clare-Background;
+  border: 1px solid $Clare-blueClare;
+  background: $Clare-blueClare;
   transition: .5s;
 }
 .ContactLinks a span {
